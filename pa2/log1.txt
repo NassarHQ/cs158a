@@ -1,9 +1,9 @@
-My id: 8059a780-80b6-49a8-8fcf-979dc069fb2c
-Sent: uuid=8059a780-80b6-49a8-8fcf-979dc069fb2c, flag=0
-Received: uuid=467d7609-546a-4a54-a965-56e1f653c97f, flag=0, less, state=0 -- Ignored
-Received: uuid=7b26bef2-c11c-49cd-b984-4a640d370f35, flag=0, less, state=0 -- Ignored
-Received: uuid=8059a780-80b6-49a8-8fcf-979dc069fb2c, flag=0, same, state=0
-leader is decided to 8059a780-80b6-49a8-8fcf-979dc069fb2c.
-Sent: uuid=8059a780-80b6-49a8-8fcf-979dc069fb2c, flag=1
-Received: uuid=8059a780-80b6-49a8-8fcf-979dc069fb2c, flag=1, same, state=1, leader=8059a780-80b6-49a8-8fcf-979dc069fb2c
-leader is decided to 8059a780-80b6-49a8-8fcf-979dc069fb2c.
+My id: ef8ccaa0-4c2c-448d-a731-fc71810d2f04
+Sent: uuid=ef8ccaa0-4c2c-448d-a731-fc71810d2f04, flag=0
+Received: uuid=c51b5084-f15f-4f1b-81e7-4475689d18a4, flag=0, less, state=0 -- Ignored
+Received: uuid=d4fce45d-1254-4918-a8af-8869d113473e, flag=0, less, state=0 -- Ignored
+Received: uuid=ef8ccaa0-4c2c-448d-a731-fc71810d2f04, flag=0, same, state=0
+leader is decided to ef8ccaa0-4c2c-448d-a731-fc71810d2f04.
+Sent: uuid=ef8ccaa0-4c2c-448d-a731-fc71810d2f04, flag=1
+Received: uuid=ef8ccaa0-4c2c-448d-a731-fc71810d2f04, flag=1, same, state=1, leader=ef8ccaa0-4c2c-448d-a731-fc71810d2f04
+leader is decided to ef8ccaa0-4c2c-448d-a731-fc71810d2f04.

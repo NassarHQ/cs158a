@@ -1,1 +1,7 @@
-My id: 097df0be-962f-4820-834d-cb7ac22108b2
+My id: d4fce45d-1254-4918-a8af-8869d113473e
+Sent: uuid=d4fce45d-1254-4918-a8af-8869d113473e, flag=0
+Received: uuid=ef8ccaa0-4c2c-448d-a731-fc71810d2f04, flag=0, greater, state=0
+Sent: uuid=ef8ccaa0-4c2c-448d-a731-fc71810d2f04, flag=0
+Received: uuid=ef8ccaa0-4c2c-448d-a731-fc71810d2f04, flag=1, greater, state=1, leader=ef8ccaa0-4c2c-448d-a731-fc71810d2f04
+Sent: uuid=ef8ccaa0-4c2c-448d-a731-fc71810d2f04, flag=1
+leader is decided to ef8ccaa0-4c2c-448d-a731-fc71810d2f04.
