@@ -1,0 +1,8 @@
+My id: 370f468f-9434-46f4-84ff-2547b71b22f9
+Sent: uuid=370f468f-9434-46f4-84ff-2547b71b22f9, flag=0
+Received: uuid=171adf5e-46c3-4dd4-850a-33e2ec87a396, flag=0, less, state=0 -- Ignored
+Received: uuid=9f2a00c3-97f7-4b46-a5ac-0f6516db8971, flag=0, greater, state=0
+Sent: uuid=9f2a00c3-97f7-4b46-a5ac-0f6516db8971, flag=0
+Received: uuid=9f2a00c3-97f7-4b46-a5ac-0f6516db8971, flag=1, greater, state=1, leader=9f2a00c3-97f7-4b46-a5ac-0f6516db8971
+Sent: uuid=9f2a00c3-97f7-4b46-a5ac-0f6516db8971, flag=1
+leader is decided to 9f2a00c3-97f7-4b46-a5ac-0f6516db8971.
