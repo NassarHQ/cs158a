@@ -1,8 +1,1 @@
-My id: df98389a-dacb-44c7-ab29-13864baa9c7c
-Sent: uuid=df98389a-dacb-44c7-ab29-13864baa9c7c, flag=0
-Received: uuid=d4f1b7bb-4e11-4c2a-ba8d-e7a731ce9890, flag=0, less, state=0 -- Ignored
-Received: uuid=fd8231b7-e73b-4347-ad3f-e1c1ef80458e, flag=0, greater, state=0
-Sent: uuid=fd8231b7-e73b-4347-ad3f-e1c1ef80458e, flag=0
-Received: uuid=fd8231b7-e73b-4347-ad3f-e1c1ef80458e, flag=1, greater, state=1, leader=fd8231b7-e73b-4347-ad3f-e1c1ef80458e
-Sent: uuid=fd8231b7-e73b-4347-ad3f-e1c1ef80458e, flag=1
-leader is decided to fd8231b7-e73b-4347-ad3f-e1c1ef80458e.
+My id: 097df0be-962f-4820-834d-cb7ac22108b2
