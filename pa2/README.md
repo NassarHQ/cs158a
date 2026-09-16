@@ -32,22 +32,22 @@ completes. Start them within a few seconds of each other.
 
 ## Example Output
 mo@Doctor-of-Philosophy pa2 % python3 myleprocess.py config1.txt log1.txt
-[8059a780-80b6-49a8-8fcf-979dc069fb2c] Listening on ('127.0.0.1', 5001) ...
-[8059a780-80b6-49a8-8fcf-979dc069fb2c] Connected to neighbor ('127.0.0.1', 5002)
-[8059a780-80b6-49a8-8fcf-979dc069fb2c] Accepted connection from ('127.0.0.1', 53099)
-leader is 8059a780-80b6-49a8-8fcf-979dc069fb2c
+[ef8ccaa0-4c2c-448d-a731-fc71810d2f04] Listening on ('127.0.0.1', 5001) ...
+[ef8ccaa0-4c2c-448d-a731-fc71810d2f04] Connected to neighbor ('127.0.0.1', 5002)
+[ef8ccaa0-4c2c-448d-a731-fc71810d2f04] Accepted connection from ('127.0.0.1', 53554)
+leader is ef8ccaa0-4c2c-448d-a731-fc71810d2f04
 
 mo@Doctor-of-Philosophy pa2 % python3 myleprocess.py config2.txt log2.txt
-[7b26bef2-c11c-49cd-b984-4a640d370f35] Listening on ('127.0.0.1', 5002) ...
-[7b26bef2-c11c-49cd-b984-4a640d370f35] Accepted connection from ('127.0.0.1', 53093)
-[7b26bef2-c11c-49cd-b984-4a640d370f35] Connected to neighbor ('127.0.0.1', 5003)
-leader is 8059a780-80b6-49a8-8fcf-979dc069fb2c
+[d4fce45d-1254-4918-a8af-8869d113473e] Listening on ('127.0.0.1', 5002) ...
+[d4fce45d-1254-4918-a8af-8869d113473e] Accepted connection from ('127.0.0.1', 53549)
+[d4fce45d-1254-4918-a8af-8869d113473e] Connected to neighbor ('127.0.0.1', 5003)
+leader is ef8ccaa0-4c2c-448d-a731-fc71810d2f04
 
 mo@Doctor-of-Philosophy pa2 % python3 myleprocess.py config3.txt log3.txt
-[467d7609-546a-4a54-a965-56e1f653c97f] Listening on ('127.0.0.1', 5003) ...
-[467d7609-546a-4a54-a965-56e1f653c97f] Connected to neighbor ('127.0.0.1', 5001)
-[467d7609-546a-4a54-a965-56e1f653c97f] Accepted connection from ('127.0.0.1', 53100)
-leader is 8059a780-80b6-49a8-8fcf-979dc069fb2c
+[c51b5084-f15f-4f1b-81e7-4475689d18a4] Listening on ('127.0.0.1', 5003) ...
+[c51b5084-f15f-4f1b-81e7-4475689d18a4] Connected to neighbor ('127.0.0.1', 5001)
+[c51b5084-f15f-4f1b-81e7-4475689d18a4] Accepted connection from ('127.0.0.1', 53557)
+leader is ef8ccaa0-4c2c-448d-a731-fc71810d2f04
 
 All three nodes agreed on the same leader UUID, confirming Termination,
 Uniqueness, and Agreement.
