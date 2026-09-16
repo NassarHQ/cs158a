@@ -1,7 +1,8 @@
-My id: 171adf5e-46c3-4dd4-850a-33e2ec87a396
-Sent: uuid=171adf5e-46c3-4dd4-850a-33e2ec87a396, flag=0
-Received: uuid=9f2a00c3-97f7-4b46-a5ac-0f6516db8971, flag=0, greater, state=0
-Sent: uuid=9f2a00c3-97f7-4b46-a5ac-0f6516db8971, flag=0
-Received: uuid=9f2a00c3-97f7-4b46-a5ac-0f6516db8971, flag=1, greater, state=1, leader=9f2a00c3-97f7-4b46-a5ac-0f6516db8971
-Sent: uuid=9f2a00c3-97f7-4b46-a5ac-0f6516db8971, flag=1
-leader is decided to 9f2a00c3-97f7-4b46-a5ac-0f6516db8971.
+My id: df98389a-dacb-44c7-ab29-13864baa9c7c
+Sent: uuid=df98389a-dacb-44c7-ab29-13864baa9c7c, flag=0
+Received: uuid=d4f1b7bb-4e11-4c2a-ba8d-e7a731ce9890, flag=0, less, state=0 -- Ignored
+Received: uuid=fd8231b7-e73b-4347-ad3f-e1c1ef80458e, flag=0, greater, state=0
+Sent: uuid=fd8231b7-e73b-4347-ad3f-e1c1ef80458e, flag=0
+Received: uuid=fd8231b7-e73b-4347-ad3f-e1c1ef80458e, flag=1, greater, state=1, leader=fd8231b7-e73b-4347-ad3f-e1c1ef80458e
+Sent: uuid=fd8231b7-e73b-4347-ad3f-e1c1ef80458e, flag=1
+leader is decided to fd8231b7-e73b-4347-ad3f-e1c1ef80458e.
