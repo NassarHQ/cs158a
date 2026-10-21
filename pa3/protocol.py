@@ -98,7 +98,7 @@ def decode_message(payload):
     Order Check:
     1. Bytes are valid UTF-8 and valid JSON
     2. the JSON is an object (dict), not a list/number/string/null
-    3. the "type" is one we know
+    3. "type" is a known message type
     4. every field that type requires is present
     """
     try: 
