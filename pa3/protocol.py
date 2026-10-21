@@ -2,9 +2,7 @@ import base64
 import binascii
 import json
 import logging
-import socket
 import struct
-import threading
 
 # CONSTANTS
 UDP_PORT = 54321 # Default UDP port
@@ -24,8 +22,8 @@ ERROR = "error"
 
 REQUIRED_FIELDS = {
     PEER_REQUEST: {"node_id"},
-    PEER_ACK: {"node_id", "tcp_port"},
-    FILE_LIST: {"files"},
+    PEER_ACK: {"node_id", "tcp_port", "to"},
+    FILE_LIST: {"node_id","files"},
     DATA_REQUEST: {"filename"},
     FILE_DATA: {"filename", "content"},
     ERROR: {"filename", "reason"},
@@ -43,17 +41,20 @@ def make_peer_request(node_id):
     """
     return {"type": PEER_REQUEST, "node_id": node_id}
 
-def make_peer_ack(node_id, tcp_port):
+def make_peer_ack(node_id, tcp_port, to_node_id):
     """
     Build PEER_ACK message
+    "to" is the node_id of the requester, other nodes ignore it
     """
-    return {"type": PEER_ACK, "node_id": node_id, "tcp_port": tcp_port}
+    return {"type": PEER_ACK, "node_id": node_id,
+            "tcp_port": tcp_port, "to": to_node_id}
 
-def make_file_list(filenames):
+def make_file_list(node_id, filenames):
     """
-    Build FILE_LIST message.
+    Build FILE_LIST message
+    node_id tells the receiver which node the list belongs to
     """
-    return {"type": FILE_LIST, "files": list(filenames)}
+    return {"type": FILE_LIST, "node_id": node_id, "files": list(filenames)}
 
 def make_data_request(filename):
     """
@@ -211,12 +212,17 @@ def send_udp(sock, msg, addr):
     sock.sendto(encode_message(msg), addr)
     log_message("SENT", addr, msg["type"])
 
-def recv_udp(sock):
-    """Wait for one UDP datagram, return (msg, addr), with msg None if invalid."""
+def recv_udp(sock, own_id=None):
+    """
+    Wait for one UDP datagram, return (msg, addr)
+    msg is None if invalid or sent by own_id (own broadcasts are not logged)
+    """
     data, addr = sock.recvfrom(UDP_BUFFER_SIZE)
     try:
         msg = decode_message(data)
     except ProtocolError:
+        return None, addr
+    if own_id is not None and msg.get("node_id") == own_id:
         return None, addr
     log_message("RECEIVED", addr, msg["type"])
     return msg, addr
