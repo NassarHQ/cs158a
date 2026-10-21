@@ -81,7 +81,7 @@ def decode_file_content(msg):
     """
     try:
         return base64.b64decode(msg["content"], validate=True)
-    except (binascii.Error, ValueError) as e:
+    except (binascii.Error, ValueError, TypeError) as e:
         raise ProtocolError(f"Invalid base64 in file_data: {e}") from e
 
 # Encoding & Validation (shared by UDP and TCP)
@@ -110,7 +110,7 @@ def decode_message(payload):
         raise ProtocolError("Message is not a JSON object")
     
     msg_type = msg.get("type")
-    if msg_type not in REQUIRED_FIELDS:
+    if not isinstance(msg_type, str) or msg_type not in REQUIRED_FIELDS:
         raise ProtocolError(f"Unknown message type: {msg_type!r}")
     
     missing = REQUIRED_FIELDS[msg_type] - msg.keys()
